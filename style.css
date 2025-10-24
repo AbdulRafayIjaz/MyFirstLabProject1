@@ -88,8 +88,7 @@ img {
 }
 
 #mainbox::after {
-  content: ""; /*creates an empty invisible element after everything inside mainbox*/
-  display: block;/*makes that invisible element behave like a block (takes up full width)*/
-  clear: left; /*makes sure the box goes aroumd all left things*/
-  clear: right /*makes sure the box goes aroumd all right things*/
+  content: ""; /*adds an invisible helper at the end of mainbox*/
+  display: block; /*makes the helper take a full line*/
+  clear: both; /*makes sure the box grows around all things floated left or right*/
 }
